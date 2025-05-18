@@ -26,11 +26,28 @@ To write a Python program to:
 ---
 
 ## 💻  Program
+```
+n = int(input())
+students = []
 
-Add Code Here
+for _ in range(n):
+    name = input()
+    grade = float(input())
+    students.append([name, grade])
+
+grades = sorted(set([grade for name, grade in students]))
+second_lowest = grades[1]
+
+second_lowest_students = [name for name, grade in students if grade == second_lowest]
+second_lowest_students.sort()
+
+for student in second_lowest_students:
+    print(student)
+```
 
 ## Output
+![image](https://github.com/user-attachments/assets/6ff07321-2713-42b8-b954-8db7ae77c90c)
 
 ## Result
-
+The program reads student names and grades, identifies the second lowest grade, and prints all student names who have that grade in alphabetical order, each on a new line, demonstrating list handling, sorting, and filtering operations.
 
