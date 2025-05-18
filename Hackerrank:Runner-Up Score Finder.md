@@ -19,9 +19,19 @@ To write a Python program that takes a list of scores from participants and find
 ---
 
 ## 💻 PROGRAM:
+```
+n = int(input())
+scores = list(map(int, input().split()))
 
-ADD CODE HERE
+unique_scores = list(set(scores))
+unique_scores.sort()
+
+print(unique_scores[-2])
+```
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/41687d44-2504-4da4-802c-684f42fcd5f6)
+
 
 ## RESULT
+The program reads n scores, removes duplicates, sorts them, and prints the second highest (runner-up) score, demonstrating use of lists, sets, and sorting.
