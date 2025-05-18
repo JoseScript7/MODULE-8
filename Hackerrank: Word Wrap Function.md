@@ -26,9 +26,26 @@ To write a Python function that takes a long string and a specified width, and r
 
 
 ## 🧪 Program
-Add Code Here
+```
+def wrap(string, max_width):
+    wrapped_lines = []
+    for i in range(0, len(string), max_width):
+        wrapped_lines.append(string[i:i+max_width])
+    return '\n'.join(wrapped_lines)
+
+# Example usage
+input_string = "PreethiJoshuaJoeAliceBobAreAllGoodStudents"
+width = 7
+
+result = wrap(input_string, width)
+print("Wrapped Text:\n", result)
+```
+
 
 ## Sample Output
+![image](https://github.com/user-attachments/assets/8dab94b2-1796-41f5-944f-4a27c7612993)
+
 
 ## Result
+The program demonstrates how to wrap a long string into lines of fixed width using string slicing and list operations. It processes the input "PreethiJoshuaJoeAliceBobAreAllGoodStudents" and splits it into chunks of width 6, printing the wrapped text accordingly.
 
